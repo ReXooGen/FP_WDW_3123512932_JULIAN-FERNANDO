@@ -55,6 +55,44 @@ body{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
+/* search-icon */
+.searchform{
+    display: flex;
+    width: 260px;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    border: 02px solid;
+    padding: 6px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.searchform.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.searchform:hover{
+    border-color: var(--pink);
+}
+
+.searchform input {
+    background: #fff;
+    border: 0;
+    outline: none;
+    width: 225px;
+}
+
+.searchform .icon-search{
+    color: black;
+}
+
+.searchform .icon-search:hover{
+    color: var(--pink);
+    transition: .4s linear;
+}
+
 /* header */
 #header{
     background: url(../images/banner-img-1.jpg) top/cover no-repeat;
@@ -70,8 +108,9 @@ body{
     border-color: var(--pink)!important;
 }
 
+
 /* title */
-.title h2::before{
+/* .title h2::before{
     position: absolute;
     content: "";
     width: 4px;
@@ -82,7 +121,19 @@ body{
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+} */
+
+/*    icon    */
+.nav-icon{
+    transition: all .42s ease;    
 }
+
+.nav-icon:hover{
+    transform: scale(1.1);
+    color: var(--pink);
+}
+
+
 
 /* collection */
 .active-filter-btn{
@@ -187,6 +238,7 @@ footer a:hover{
         border-bottom: none;
     }
 }
+
 
 
 /* Wrapper Quantity */
